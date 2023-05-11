@@ -3,9 +3,13 @@
 
 class Bsh():
     def __init__(self) -> None:
-        pass
+        self.bshTable = self.bshTable
 
-    def initBshTable(self):
+    class BshTable():
+        def init_bshTable(self):
+            self.bshTable = [hash([])]
+            return self.bshTable
         
-        
-
+        def addTo_bshTable(self, value):
+            self.bshTable.append(value)
+            return self
